@@ -99,7 +99,7 @@ int main(){
             if(n < 10){
                 if(posicion >= 1 && posicion <= n + 1){
                     for(i = n; i >= posicion; i--){
-                        letras[i-1] = letras[i];
+                        letras[i] = letras[i-1];
                     }
                     letras[posicion - 1] = letra;
                     n++;
